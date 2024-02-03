@@ -11,7 +11,10 @@
   var fruitItems = document.querySelectorAll("#fruitList .fruit");
 
   // Iterate through the fruit items and log their text content
+  // Iterate through the fruit items and apply styling
   fruitItems.forEach(function (item) {
-    fruitItems.style.color = "green";
+    // Apply styling to each item
+    item.style.color = "green";
+    item.style.fontWeight = "bold";
   });
 </script>
