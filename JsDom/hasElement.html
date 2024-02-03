@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    #test {
+      height: 100%;
+      width: 500px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 20px;
+      padding: 1.5rem 1rem;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <h1>Has Attributes</h1>
+      <div class="box-2" id="test">
+        <h2>Welcome To Abu-Talib Tuitorials</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+          assumenda doloremque perspiciatis sint ducimus eum ipsum? Tempora
+          reiciendis minima cum delectus. Harum molestias voluptatem deserunt
+          dicta, nostrum quidem voluptatibus accusantium aliquam ex obcaecati
+          illo earum laudantium veritatis dolorum at. Soluta doloribus quisquam
+          molestias similique dicta rem natus dolore culpa eum?
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let target = document.getElementById("test");
+      let find = target.hasAttribute("class");
+      let target2 = document.getElementsByClassName("main");
+
+      // let find2 = target2.hasChildNodes();
+      console.log(find);
+      // console.log(find2);
+    </script>
+  </body>
+</html>

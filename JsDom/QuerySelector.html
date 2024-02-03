@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div id="exampleDiv">
+      <p class="highlight">This is a paragraph.</p>
+      <p class="highlight">This is a paragraph.</p>
+
+      <p class="highlight">This is a paragraph.</p>
+
+      <p class="highlight">This is a paragraph.</p>
+
+      <p class="highlight">This is a paragraph.</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Get the first paragraph with class "highlight" under the element with id "exampleDiv"
+      var highlightedParagraph = document.querySelector(
+        "#exampleDiv .highlight"
+      );
+
+      // Apply styling to the selected paragraph
+      highlightedParagraph.style.color = "red";
+      highlightedParagraph.style.fontWeight = "bold";
+    </script>
+  </body>
+</html>

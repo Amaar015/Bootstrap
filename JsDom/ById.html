@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <ul id="myList2"></ul>
+
+    <!-- JavaScript -->
+    <script>
+      // Get all li elements under the element with id "myList"
+      var listItems = document
+        .getElementById("myList")
+        .getElementsByTagName("li");
+
+      var listItems2 = document.getElementById("myList2");
+
+      var items = [
+        "Amaar Raza",
+        "Aijaz Ali",
+        "Zohaib ALi",
+        "Abudllah",
+        "Muhammad Ali",
+      ];
+      // Iterate through the list items and log their text content
+      items.forEach(function (itemText) {
+        // Create a new li element
+        var listItem = document.createElement("li");
+
+        // Set the text content of the li element
+        listItem.textContent = itemText;
+
+        // Append the li element to the ul (myList)
+        listItems2.appendChild(listItem);
+      });
+    </script>
+  </body>
+</html>

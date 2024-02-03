@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div id="exampleDiv"></div>
+
+    <!-- JavaScript -->
+    <script>
+      // Get the element with id "exampleDiv"
+      var exampleDiv = document.getElementById("exampleDiv");
+
+      // Set the "class" and "style" attributes for the div
+      exampleDiv.setAttribute("class", "styledDiv");
+      exampleDiv.setAttribute("style", "color: blue;");
+
+      // Log the updated attributes
+      console.log("Class:", exampleDiv.getAttribute("class"));
+      console.log("Style:", exampleDiv.getAttribute("style"));
+    </script>
+  </body>
+</html>
