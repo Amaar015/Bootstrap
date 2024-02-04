@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font family cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container_head">Registration</div>
+      <form class="form" id="myform">
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__control"
+            placeholder="Enter your name"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="emai"
+            id="email"
+            class="form__control"
+            placeholder="Enter your Email Address"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="number">Phone Number</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form__control"
+            placeholder="Enter your Phone Number"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            class="form__control"
+            placeholder="Enter your Password"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="cpass">Confirm Password</label>
+          <input
+            type="password"
+            name="cpass"
+            id="cpass"
+            class="form__control"
+            placeholder="Enter your Confirm Password"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <input type="submit" id="submit" class="btn" />
+        </div>
+      </form>
+    </div>
+    <script>
+      // Validation
+
+      const form = document.getElementById("myform");
+      const username = document.getElementById("name");
+      const email = document.getElementById("email");
+      const numb = document.getElementById("number");
+      const pass = document.getElementById("pass");
+      const cpass = document.getElementById("cpass");
+      var span = document.getElementsByClassName("error");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        checkInputs();
+      });
+      function checkInputs() {
+        const nameValue = username.value.trim();
+        const emailValue = email.value.trim();
+        const numbValue = numb.value.trim();
+        const passdValue = pass.value.trim();
+        const cpassValue = cpass.value.trim();
+        if (nameValue === "") {
+          showerror(username, "*Name cannot be blank");
+        } else {
+          setsuccess(username);
+        }
+        if (emailValue === "") {
+          showerror(email, "*Email cannot be blank");
+        } else {
+          setsuccess(email);
+        }
+        if (numbValue === "") {
+          showerror(numb, "*Phone Number cannot be blank");
+        } else {
+          setsuccess(numb);
+        }
+        if (passdValue === "") {
+          showerror(pass, "*Password cannot be blank");
+        } else {
+          setsuccess(pass);
+        }
+        if (cpassValue === "") {
+          showerror(cpass, "*Password cannot be blank");
+        } else {
+          setsuccess(cpass);
+        }
+      }
+      function showerror(input, msg) {
+        const formGroup = input.parentElement;
+        const error = formGroup.querySelector("span");
+        const icon = formGroup.querySelector(".material-icons");
+        error.innerText = msg;
+        icon.innerText = "clear";
+        formGroup.className = "form__group invalid";
+      }
+
+      function setsuccess(input) {
+        const formGroup = input.parentElement;
+        const icon = formGroup.querySelector(".material-icons");
+        icon.innerText = "check";
+        formGroup.className = "form__group valid";
+      }
+    </script>
+  </body>
+</html>
