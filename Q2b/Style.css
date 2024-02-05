@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.text-fields {
+  width: 40%;
+}
+.image {
+  width: 40%;
+  text-align: center;
+}
