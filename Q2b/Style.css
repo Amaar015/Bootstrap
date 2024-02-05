@@ -11,11 +11,38 @@
   align-items: center;
   height: 100vh;
   margin: 0;
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
 }
 .text-fields {
   width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .image {
   width: 40%;
   text-align: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.reset {
+  background-color: #f44336;
 }
