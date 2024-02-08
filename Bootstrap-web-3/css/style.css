@@ -382,3 +382,7 @@ p {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+.team_wrapper .team-info .social-network li a:hover {
+  background-color: var(--secondary-text);
+}
