@@ -273,3 +273,44 @@ p {
   text-align: center;
   margin: 0 auto 2.5rem;
 }
+
+/* about section */
+
+.about_wrapper h2 {
+  color: var(--text-black);
+}
+
+.about_wrapper .card {
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about_wrapper .about-clinic {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.about_wrapper .about-clinic:nth-child(1),
+.about_wrapper .about-clinic:nth-child(2) {
+  margin-bottom: 2.8125rem;
+}
+.about_wrapper .about-clinic:nth-child(2),
+.about_wrapper .about-clinic:nth-child(4) {
+  padding-left: 3.75rem;
+}
+.about_wrapper .line-1,
+.about_wrapper .line-2 {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 0.0313rem;
+  height: 100%;
+  background: var(--bg-dark);
+}
+.about_wrapper .line-2 {
+  width: 100%;
+  height: 0.0625rem;
+}
