@@ -416,3 +416,32 @@ p {
   background-color: var(--bg-light-blue);
   padding: 2.5rem;
 }
+/* footer */
+.footer_wrapper {
+  background-color: var(--primary-color);
+  padding-bottom: 0;
+}
+.footer_wrapper h5 {
+  color: var(--text-white);
+}
+
+.footer_wrapper .contact-info ul a {
+  padding: 0;
+}
+.footer_wrapper ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  font-size: 0.875rem;
+}
+.footer_wrapper ul li a {
+  color: var(--text-white);
+}
+.footer_wrapper .link-widget li a,
+.footer_wrapper p {
+  color: var(--text-white);
+  font-size: 0.875rem;
+  padding-left: 1.5rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
