@@ -386,3 +386,33 @@ p {
 .team_wrapper .team-info .social-network li a:hover {
   background-color: var(--secondary-text);
 }
+
+/*8 Gallery Section */
+.gallery_wrapper {
+  background-image: url("../images/gallery/gallery-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery_wrapper img {
+  border-radius: 0.9375rem;
+}
+/* testimonial Section */
+.testimonial_wrapper .card {
+  background-color: rgba(252, 81, 133, 0.05);
+}
+
+/* Appointment */
+
+.appointment_wrapper {
+  background-image: url("../images/appointmnet-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* blog */
+.blog_wrapper .blog-content {
+  background-color: var(--bg-light-blue);
+  padding: 2.5rem;
+}
