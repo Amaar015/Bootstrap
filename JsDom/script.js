@@ -14,8 +14,8 @@ newElement.style.marginBottom = "10px";
 
 // append h2 new create tag into html existing dive
 
-//   ExistingElement.appendChild(newElement);
+ExistingElement.appendChild(newElement);
 
-ExistingElement.insertBefore(newElement, ExistingElement.childNodes[0]);
+// ExistingElement.insertBefore(newElement, ExistingElement.childNodes[0]);
 // insertBefore method is used to insert element before the give position now it contains two parameters
 //  1 is elements which you want to store and 2 is existing element nodes to say the position where the new tag is inserted
