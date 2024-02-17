@@ -26,7 +26,7 @@
   <body>
     <div class="main">
       <h1>Has Attributes</h1>
-      <div id="test">
+      <div id="test" class="hello">
         <h2>Welcome To Abu-Talib Tuitorials</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -47,6 +47,10 @@
       // let find2 = target2.hasChildNodes();
       console.log(find);
       // console.log(find2);
+      let remove = target.removeAttribute("class");
+      let finda = target.hasAttribute("class");
+
+      console.log(finda);
     </script>
   </body>
 </html>
